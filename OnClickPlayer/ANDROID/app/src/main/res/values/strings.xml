@@ -1,0 +1,42 @@
+<resources>
+
+    <string name="Funny">Funny Sounds</string>
+    <string name="Animal">Animal Sounds</string>
+    <string name="Random">Random Sounds</string>
+    <string name="Creator">Created by Lukscha</string>
+    <string name="FunnySounds">Funny sounds</string>
+    <string name="AnimalSounds">Animal sounds</string>
+    <string name="AmbienceSounds">Ambience sounds</string>
+    <string name="OnClickPlayer">On Click Player</string>
+    <string name="Surprise">Tap for a surprise!</string>
+    <string name="TheLastOneIHope">On Click Player</string>
+    <string name="background">.Background</string>
+    <string name="BackButton">Back button</string>
+    <string name="Button">Button</string>
+    <string name="Text">Text</string>
+
+
+    <string name="Asteroids">Asteroids</string>
+    <string name="Birds">Birds</string>
+    <string name="Cat_Sound">Cat</string>
+    <string name="Cow_Sound">Cow</string>
+    <string name="Damn_son">Damn son</string>
+    <string name="Dog_Sound">Dog</string>
+    <string name="Elephant_Sound">Elephant</string>
+    <string name="Fire">Fire</string>
+    <string name="Arnold_sound">Arnold</string>
+    <string name="Gnome">Gnome</string>
+    <string name="Horse_Sound">Horse</string>
+    <string name="My_Name_Jeff">Jeff</string>
+    <string name="Pigeon_Sound">Pigeons</string>
+    <string name="Rain">Rain</string>
+    <string name="Rick_Roll">Rick Roll</string>
+    <string name="Sheep_Sound">Sheep</string>
+    <string name="Thunder">Thunder</string>
+    <string name="Yoshi">Yoshi</string>
+    <string name="Kenny">Kenny</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

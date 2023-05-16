@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentFunnySounds">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/BackButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="61dp"
+            android:layout_height="53dp"
+            android:drawableLeft="@drawable/ic_back"
+            android:text="@string/BackButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Background"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/Background"
+            android:layout_width="412dp"
+            android:layout_height="732dp"
+            android:alpha="0.50"
+            android:src="@drawable/background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/FunnyButton2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="150dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            android:text="@string/Arnold_sound"
+            app:layout_constraintEnd_toEndOf="@+id/FunnySounds"
+            app:layout_constraintStart_toStartOf="@+id/FunnySounds"
+            app:layout_constraintTop_toBottomOf="@+id/FunnySounds" />
+
+        <Button
+            android:id="@+id/FunnyButton1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="280dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            android:text="@string/My_Name_Jeff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FunnySounds" />
+
+        <Button
+            android:id="@+id/FunnyButton3"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="150dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/Background"
+            app:layout_constraintTop_toBottomOf="@+id/FunnySounds"
+            tools:text="@string/Kenny" />
+
+        <Button
+            android:id="@+id/FunnyButton5"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            android:text="@string/Yoshi"
+            app:layout_constraintEnd_toEndOf="@+id/FunnyButton2"
+            app:layout_constraintStart_toStartOf="@+id/FunnyButton2"
+            app:layout_constraintTop_toBottomOf="@+id/FunnyButton2" />
+
+        <Button
+            android:id="@+id/FunnyButton4"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            android:text="@string/Gnome"
+            app:layout_constraintEnd_toEndOf="@+id/FunnyButton1"
+            app:layout_constraintStart_toStartOf="@+id/FunnyButton1"
+            app:layout_constraintTop_toBottomOf="@+id/FunnyButton1" />
+
+        <Button
+            android:id="@+id/FunnyButton6"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            android:text="@string/Damn_son"
+            app:layout_constraintEnd_toEndOf="@+id/FunnyButton3"
+            app:layout_constraintStart_toStartOf="@+id/FunnyButton3"
+            app:layout_constraintTop_toBottomOf="@+id/FunnyButton3" />
+
+        <TextView
+            android:id="@+id/FunnySounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Funny"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.104" />
+
+
+        <TextView
+            android:id="@+id/FunnySound3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Kenny"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/FunnyButton3"
+            app:layout_constraintStart_toStartOf="@+id/FunnyButton3"
+            app:layout_constraintTop_toBottomOf="@+id/FunnyButton3" />
+
+        <TextView
+            android:id="@+id/FunnySound1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/My_Name_Jeff"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/FunnyButton1"
+            app:layout_constraintStart_toStartOf="@+id/FunnyButton1"
+            app:layout_constraintTop_toBottomOf="@+id/FunnyButton1" />
+
+        <TextView
+            android:id="@+id/FunnySound4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Gnome"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/FunnyButton4"
+            app:layout_constraintStart_toStartOf="@+id/FunnyButton4"
+            app:layout_constraintTop_toBottomOf="@+id/FunnyButton4" />
+
+        <TextView
+            android:id="@+id/FunnySound5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Yoshi"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/FunnyButton5"
+            app:layout_constraintStart_toStartOf="@+id/FunnyButton5"
+            app:layout_constraintTop_toBottomOf="@+id/FunnyButton5" />
+
+        <TextView
+            android:id="@+id/FunnySound6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Damn_son"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/FunnyButton6"
+            app:layout_constraintStart_toStartOf="@+id/FunnyButton6"
+            app:layout_constraintTop_toBottomOf="@+id/FunnyButton6" />
+
+        <TextView
+            android:id="@+id/FunnySound2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/FunnyButton2"
+            app:layout_constraintStart_toStartOf="@+id/FunnyButton2"
+            app:layout_constraintTop_toBottomOf="@+id/FunnyButton2"
+            android:text="@string/Arnold_sound" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

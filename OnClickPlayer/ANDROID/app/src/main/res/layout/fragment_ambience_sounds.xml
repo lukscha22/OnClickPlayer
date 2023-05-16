@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentAmbienceSounds">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/BackButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="61dp"
+            android:layout_height="53dp"
+            android:drawableLeft="@drawable/ic_back"
+            android:text="@string/BackButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Background"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/Background"
+            android:layout_width="412dp"
+            android:layout_height="732dp"
+            android:alpha="0.60"
+            android:contentDescription="@string/background"
+            android:src="@drawable/background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/AmbienceButton2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="150dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            android:text="@string/Asteroids"
+            app:layout_constraintEnd_toEndOf="@+id/AmbienceSounds"
+            app:layout_constraintStart_toStartOf="@+id/AmbienceSounds"
+            app:layout_constraintTop_toBottomOf="@+id/AmbienceSounds"
+            tools:ignore="RtlHardcoded,TextSizeCheck" />
+
+        <Button
+            android:id="@+id/AmbienceButton1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="280dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            android:text="@string/Fire"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AmbienceSounds"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/AmbienceButton3"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="150dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            android:text="@string/Rain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/Background"
+            app:layout_constraintTop_toBottomOf="@+id/AmbienceSounds"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/AmbienceButton5"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            android:text="@string/Birds"
+            app:layout_constraintEnd_toEndOf="@+id/AmbienceButton2"
+            app:layout_constraintStart_toStartOf="@+id/AmbienceButton2"
+            app:layout_constraintTop_toBottomOf="@+id/AmbienceButton2"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/AmbienceButton4"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            android:text="@string/Thunder"
+            app:layout_constraintEnd_toEndOf="@+id/AmbienceButton1"
+            app:layout_constraintStart_toStartOf="@+id/AmbienceButton1"
+            app:layout_constraintTop_toBottomOf="@+id/AmbienceButton1"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/AmbienceButton6"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            android:text="@string/Pigeon_Sound"
+            app:layout_constraintEnd_toEndOf="@+id/AmbienceButton3"
+            app:layout_constraintStart_toStartOf="@+id/AmbienceButton3"
+            app:layout_constraintTop_toBottomOf="@+id/AmbienceButton3"
+            tools:ignore="RtlHardcoded,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/AmbienceSounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/AmbienceSounds"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.104" />
+
+
+        <TextView
+            android:id="@+id/AmbienceSound3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Rain"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/AmbienceButton3"
+            app:layout_constraintStart_toStartOf="@+id/AmbienceButton3"
+            app:layout_constraintTop_toBottomOf="@+id/AmbienceButton3" />
+
+        <TextView
+            android:id="@+id/AmbienceSound1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Fire"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/AmbienceButton1"
+            app:layout_constraintStart_toStartOf="@+id/AmbienceButton1"
+            app:layout_constraintTop_toBottomOf="@+id/AmbienceButton1" />
+
+        <TextView
+            android:id="@+id/AmbienceSound4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Thunder"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/AmbienceButton4"
+            app:layout_constraintStart_toStartOf="@+id/AmbienceButton4"
+            app:layout_constraintTop_toBottomOf="@+id/AmbienceButton4" />
+
+        <TextView
+            android:id="@+id/AmbienceSound5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Birds"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/AmbienceButton5"
+            app:layout_constraintStart_toStartOf="@+id/AmbienceButton5"
+            app:layout_constraintTop_toBottomOf="@+id/AmbienceButton5" />
+
+        <TextView
+            android:id="@+id/AmbienceSound6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Pigeon_Sound"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/AmbienceButton6"
+            app:layout_constraintStart_toStartOf="@+id/AmbienceButton6"
+            app:layout_constraintTop_toBottomOf="@+id/AmbienceButton6" />
+
+        <TextView
+            android:id="@+id/AmbienceSound2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Asteroids"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/AmbienceButton2"
+            app:layout_constraintStart_toStartOf="@+id/AmbienceButton2"
+            app:layout_constraintTop_toBottomOf="@+id/AmbienceButton2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

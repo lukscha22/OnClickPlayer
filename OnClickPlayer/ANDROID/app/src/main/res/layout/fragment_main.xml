@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:id="@+id/Background"
+            android:layout_width="409dp"
+            android:layout_height="731dp"
+            android:alpha="0.6"
+            android:contentDescription="@string/background"
+            android:orientation="vertical"
+            android:rotation="-270"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/background"
+            tools:ignore="VisualLintBounds" />
+
+        <TextView
+        android:id="@+id/OnClickPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="550dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/OnClickPlayer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/AnimalButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="89dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="250dp"
+            android:color="@color/teal_200"
+            android:drawableLeft="@drawable/ic_animal_paw_vector_icon_animals_icons_icons_download_0"
+            android:text="@string/Animal"
+            android:textColor="#2E7D32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/OnClickPlayer"
+            app:layout_constraintTop_toBottomOf="@+id/FunnyButton"
+            tools:ignore="DuplicateSpeakableTextCheck,RtlHardcoded,TextContrastCheck,TextSizeCheck" />
+
+        <Button
+            android:id="@+id/FunnyButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="87dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="250dp"
+            android:color="@color/teal_200"
+            android:drawableLeft="@drawable/ic_linkedin_funny_emoticon_500"
+            android:text="@string/Funny"
+            android:textColor="#1976D2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/OnClickPlayer"
+            app:layout_constraintTop_toBottomOf="@+id/OnClickPlayer"
+            tools:ignore="RtlHardcoded,TextSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/AmbienceButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="87dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="250dp"
+            android:color="@color/teal_200"
+            android:drawableLeft="@drawable/ambience"
+            android:text="@string/AmbienceSounds"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.562"
+            app:layout_constraintStart_toStartOf="@+id/OnClickPlayer"
+            app:layout_constraintTop_toBottomOf="@+id/AnimalButton"
+            tools:ignore="RtlHardcoded,TextSizeCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/SurpriseButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="74dp"
+            android:layout_height="82dp"
+            android:layout_marginTop="450dp"
+            android:contentDescription="@string/Surprise"
+            android:drawableLeft="@drawable/ic_sound_new"
+            app:layout_constraintEnd_toEndOf="@+id/OnClickPlayer"
+            app:layout_constraintStart_toStartOf="@+id/OnClickPlayer"
+            app:layout_constraintTop_toBottomOf="@+id/OnClickPlayer"
+            tools:ignore="RedundantDescriptionCheck,RtlHardcoded,DuplicateSpeakableTextCheck"
+            android:onClick="surprise"/>
+
+        <TextView
+            android:id="@+id/RandomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/AmbienceSounds"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/AnimalText"
+            app:layout_constraintStart_toStartOf="@+id/AnimalText"
+            app:layout_constraintTop_toBottomOf="@+id/AnimalText" />
+
+        <TextView
+            android:id="@+id/AnimalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Animal"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/FunnyText"
+            app:layout_constraintStart_toStartOf="@+id/FunnyText"
+            app:layout_constraintTop_toBottomOf="@+id/FunnyText" />
+
+        <TextView
+            android:id="@+id/FunnyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="108dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Funny"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/OnClickPlayer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/OnClickPlayer" />
+
+    <TextView
+        android:id="@+id/SurpriseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/Surprise"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SurpriseButton"
+        app:layout_constraintVertical_bias="0.352" />
+
+    <TextView
+        android:id="@+id/Creator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/Creator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SurpriseText"
+        app:layout_constraintVertical_bias="0.967" />
+
+        <Button
+            android:id="@+id/RecyclerButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="75dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:drawableBottom="@drawable/nesto"
+            android:text="Button"
+            app:layout_constraintBottom_toTopOf="@+id/OnClickPlayer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/OnClickPlayer"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

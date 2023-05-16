@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentFunnySounds">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/BackButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="61dp"
+            android:layout_height="53dp"
+            android:drawableLeft="@drawable/ic_back"
+            android:text="@string/BackButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Background"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/Background"
+            android:layout_width="412dp"
+            android:layout_height="732dp"
+            android:alpha="0.60"
+            android:src="@drawable/background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/AnimalButton2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="150dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            android:text="@string/Dog_Sound"
+            app:layout_constraintEnd_toEndOf="@+id/AnimalSounds"
+            app:layout_constraintStart_toStartOf="@+id/AnimalSounds"
+            app:layout_constraintTop_toBottomOf="@+id/AnimalSounds" />
+
+        <Button
+            android:id="@+id/AnimalButton1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="280dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            android:text="@string/Cat_Sound"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AnimalSounds" />
+
+        <Button
+            android:id="@+id/AnimalButton3"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="150dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            android:text="@string/Horse_Sound"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/Background"
+            app:layout_constraintTop_toBottomOf="@+id/AnimalSounds" />
+
+        <Button
+            android:id="@+id/AnimalButton5"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            android:text="@string/Elephant_Sound"
+            app:layout_constraintEnd_toEndOf="@+id/AnimalButton2"
+            app:layout_constraintStart_toStartOf="@+id/AnimalButton2"
+            app:layout_constraintTop_toBottomOf="@+id/AnimalButton2" />
+
+        <Button
+            android:id="@+id/AnimalButton4"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            android:text="@string/Sheep_Sound"
+            app:layout_constraintEnd_toEndOf="@+id/AnimalButton1"
+            app:layout_constraintStart_toStartOf="@+id/AnimalButton1"
+            app:layout_constraintTop_toBottomOf="@+id/AnimalButton1" />
+
+        <Button
+            android:id="@+id/AnimalButton6"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:drawableLeft="@drawable/ic_sound_new"
+            android:text="@string/Cow_Sound"
+            app:layout_constraintEnd_toEndOf="@+id/AnimalButton3"
+            app:layout_constraintStart_toStartOf="@+id/AnimalButton3"
+            app:layout_constraintTop_toBottomOf="@+id/AnimalButton3" />
+
+        <TextView
+            android:id="@+id/AnimalSounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Animal"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.104" />
+
+
+        <TextView
+            android:id="@+id/AnimalSound3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Horse_Sound"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/AnimalButton3"
+            app:layout_constraintStart_toStartOf="@+id/AnimalButton3"
+            app:layout_constraintTop_toBottomOf="@+id/AnimalButton3" />
+
+        <TextView
+            android:id="@+id/AnimalSound1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Cat_Sound"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/AnimalButton1"
+            app:layout_constraintStart_toStartOf="@+id/AnimalButton1"
+            app:layout_constraintTop_toBottomOf="@+id/AnimalButton1" />
+
+        <TextView
+            android:id="@+id/AnimalSound4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Sheep_Sound"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/AnimalButton4"
+            app:layout_constraintStart_toStartOf="@+id/AnimalButton4"
+            app:layout_constraintTop_toBottomOf="@+id/AnimalButton4" />
+
+        <TextView
+            android:id="@+id/AnimalSound5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Elephant_Sound"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/AnimalButton5"
+            app:layout_constraintStart_toStartOf="@+id/AnimalButton5"
+            app:layout_constraintTop_toBottomOf="@+id/AnimalButton5" />
+
+        <TextView
+            android:id="@+id/AnimalSound6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Cow_Sound"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/AnimalButton6"
+            app:layout_constraintStart_toStartOf="@+id/AnimalButton6"
+            app:layout_constraintTop_toBottomOf="@+id/AnimalButton6" />
+
+        <TextView
+            android:id="@+id/AnimalSound2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/Dog_Sound"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/AnimalButton2"
+            app:layout_constraintStart_toStartOf="@+id/AnimalButton2"
+            app:layout_constraintTop_toBottomOf="@+id/AnimalButton2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
